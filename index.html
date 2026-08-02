@@ -866,11 +866,11 @@
             }, 2500);
         }
 
-        /* LÓGICA DO EASTER EGG (4 CLIQUES NO GATO PRETO) */
+        /* LÓGICA DO EASTER EGG (2 CLIQUES NO GATO PRETO) */
         let catClicks = 0;
         function clickSecretCat() {
             catClicks++;
-            if (catClicks === 4) {
+            if (catClicks === 2) {
                 document.getElementById("easterModal").style.display = "flex";
                 confetti({ particleCount: 50, spread: 60, origin: { y: 0.9 } });
                 catClicks = 0;
